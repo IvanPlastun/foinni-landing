@@ -1,0 +1,224 @@
+﻿@media (min-width: 801px) and (max-width: 1170px) {
+    /* *******************************************
+    
+        HEADER    
+    
+    ******************************************* */
+    .container {
+        width: 100%;
+    }
+    
+    .header-preview .header-preview__description {
+        width: 100%;
+    }
+    
+    /* *******************************************
+    
+        Service   
+    
+    ******************************************* */
+    
+    .service-head__description {
+        width: 100%;
+    }
+    
+    @media (min-width: 850px) and (max-width: 1150px) { 
+        .service-boxes {
+            justify-content: center;
+            
+            .service-box {
+                margin-bottom: 20px;
+            }
+
+            .service-box:nth-child(2n-1) {
+                margin-right: 20px;
+            }
+        }
+        
+     @media (min-width: 901px) and (max-width: 1150px) {
+        .service-boxes {
+            justify-content: space-between;
+
+            .service-box {
+               width: 32%;
+            }
+
+            .service-box:nth-child(2n-1) {
+                margin-right: 0;
+            }
+        }
+            
+     }
+  }
+    
+  /* *******************************************
+    
+        Teams  
+    
+  ******************************************* */
+    
+    .photo-box_positon {
+        margin-bottom: 30px;
+    }
+    
+    @media (min-width: 801px) and (max-width: 1000px) {
+        .team-boxes {
+            flex-flow: row wrap;
+            
+            & .photo-box {
+                width: 48%;
+                height: 440px;
+            }
+        }
+    }
+    
+    @media (min-width: 1001px) and (max-width: 1150px) {
+        .team-boxes {
+            flex-flow: row wrap;
+            
+            & .photo-box {
+                width: 48%;
+                height: 520px;
+            }
+        }
+    }
+    
+    .team-boxes .photo-box:hover {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+        -moz-transform: scaleY(1.0);
+        -ms-transform: scaleY(1.0);
+        -o-transform: scaleY(1.0);
+    }
+    
+    /* *******************************************
+    
+        works  
+    
+   ******************************************* */
+    
+    @media (min-width: 801px) and (max-width: 1149px) { 
+        .set-works {
+            justify-content: center;
+        }
+        
+    }
+    
+    @media (min-width: 1150px) and (max-width: 1169px) { 
+        .set-works {
+            justify-content: flex-start;
+            
+            .unit-work {
+                width: 33%;
+            }
+        }  
+        
+    }
+    
+    /* *******************************************
+    
+         Price-Plans
+    
+   ******************************************* */
+    
+    @media (min-width: 801px) and (max-width: 1149px) {
+        .plan-boxes { 
+            flex-flow: row wrap;
+        }
+        
+        .plan-boxes .plan-box {
+            width: 48%;
+        }
+    }
+    
+    /* *****************************************************
+    
+        СЕКЦИЯ feedbackForm
+    
+    **************************************************** */
+    
+    @media (min-width: 801px) and (max-width: 1150px) {
+        .form__input-fields_margin {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .form {
+            padding-left: 30px;
+            padding-right: 30px;
+
+            &__input-fields {
+                flex-direction: column;
+            }
+
+            &__input {
+                width: 100%;
+            }
+
+            &__input_size {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            &__input_margin {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        .feedback-form {
+            height: 540px;
+            background-position: 0 0;
+        }
+        
+        .form__input-fields {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .form__input {
+            width: 48%;
+        }
+        
+        .form__input_size {
+            width: 100% !important;
+        }
+    }
+    
+    /* *****************************************************
+    
+        FOOTER
+    
+    **************************************************** */
+    
+    ._interval {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-boxes {
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .about {
+        flex-basis: 100%;
+    }
+    
+    .copyright {
+        margin-top: 51px;
+    }
+    
+    @media (min-width: 801px) and (max-width: 1000px) {
+        .footer-boxes {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .about {
+            flex-basis: 310px;
+        }
+    }
+    
+}

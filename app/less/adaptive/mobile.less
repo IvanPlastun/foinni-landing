@@ -1,0 +1,294 @@
+﻿@media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .logo {
+        float: none;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+    }
+    
+    .header-elements {
+        width: 100%;
+        
+        & .hide-nav {
+            float: none;
+            display: block;
+            top: 40px;
+            right: 30px;
+        }
+    }
+    
+    .nav {
+        width: 100%;
+        position: absolute;
+        display: none;
+        top: 85px;
+        background-color: #000;
+        
+        &-list {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+            &__item {
+                margin-right: 0;
+                width: 100%;
+                
+                & a {
+                    padding: 15px;
+                }
+            }
+    
+        }
+    }
+    
+    .nav .nav-list .nav-list__item a:hover {
+        color: @light_color;
+        border: none;
+        background-color: @text_green;
+    }
+    
+    
+    .header-preview .header-preview__heading {
+        line-height: 55px;
+    }
+    
+    .header-preview_position {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .header-preview .header-preview__description {
+        width: 100%;
+    }
+    
+    
+    /* *****************************************************
+    
+        СЕКЦИЯ SERVICE
+    
+    **************************************************** */
+    
+    .service {
+        padding-left: 30px;
+        padding-right: 30px;
+        &-head {
+            padding-top: 90px;
+            &__description {
+                width: 100%;
+            }
+        }
+    }
+    
+    .heading_margin {
+        margin-bottom: 42px;
+    }
+    
+    .service-boxes {
+        flex-flow: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-boxes .service-box {
+        width: 100%
+    }
+    
+     /* *****************************************************
+    
+        СЕКЦИЯ Teams
+    
+    **************************************************** */
+    
+    .heading-team_margin {
+        margin-top: 30px;
+        margin-bottom: 42px;
+    }
+    
+    .team-boxes {
+        flex-direction: column;
+        align-items: center;
+        
+        &_margin {
+            margin-bottom: 78px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        
+        & .photo-box {
+            width: 100%;
+            height: 345px;
+            margin-bottom: 30px;
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+            
+            &:hover {
+                transform: translate(1.0);
+                -webkit-transform: scaleY(1.0);
+                -moz-transform: scaleY(1.0);
+                -ms-transform: scaleY(1.0);
+                -o-transform: scaleY(1.0);
+            }
+        }
+    }
+    
+    /* *****************************************************
+    
+        СЕКЦИЯ WORKS
+    
+    **************************************************** */
+    
+    .works_margin {
+        margin-bottom: 78px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .works-head-h3_margin {
+        margin-bottom: 42px
+    }
+    
+    .works-head {
+        height: 160px;
+        margin-bottom: 42px;
+    }
+    
+    .links-box {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        
+        & .selection-link {
+            margin-right: 20px;
+        }
+    }
+    
+    /* *****************************************************
+    
+        СЕКЦИЯ PricePlans
+    
+    **************************************************** */
+    
+    .price-plans {
+        margin-bottom: 78px;
+    }
+    
+    .head-h3_margin {
+        margin-bottom: 42px;
+    }
+    
+    .plan-boxes {
+        justify-content: center;
+        flex-flow: row wrap;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .plan-boxes .plan-box {
+        width: 100%;
+    }
+    
+    /* *****************************************************
+    
+        СЕКЦИЯ feedbackForm
+    
+    **************************************************** */
+    
+    .form__input-fields_margin {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .form {
+        padding-left: 30px;
+        padding-right: 30px;
+        
+        &__input-fields {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        &__input {
+            width: 100%;
+        }
+        
+        &__input_size {
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        &__input_margin {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .feedback-form {
+        height: 600px;
+        background-position: 0 0;
+    }
+    
+    /* *****************************************************
+    
+        FOOTER
+    
+    **************************************************** */
+    
+    ._interval {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-boxes {
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .about {
+        flex-basis: 100%;
+    }
+    
+    .copyright {
+        margin-top: 51px;
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 450px) { 
+    .set-works  { 
+        justify-content: center;
+        & .unit-work {
+            width: 100%;
+            height: 350px;
+
+            & img {
+                width: 100%;
+                height: 350px;
+            }
+        }
+    }
+}
+
+@media (min-width: 451px) and (max-width: 480px) { 
+    .set-works  { 
+        justify-content: center;
+        & .unit-work {
+            width: 400px;
+            height: 400px;
+
+            & img {
+                width: 100%;
+                height: 400px;
+            }
+        }
+    }
+}

@@ -1,0 +1,195 @@
+.header_position {
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    height: 800px;
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    &_shadow {
+        position: relative;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    &-elements {
+        height: 119px;
+        background-color: #000;
+        border-bottom: 1px solid rgba(143, 142, 145, 0.5);
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        
+        & .hide-nav {
+            display: none;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            background-color: #000;
+            
+            &__line {
+                position: absolute;
+                display: block;
+                width: 80%;
+                margin: 10%;
+                height: 3px;
+                border-radius: 5px;
+                background-color: #fff;
+            }
+            
+            &_line-top {
+                top: 5px;
+                -webkit-transition: 1s;
+                -moz-transition: 1s;
+                -ms-transition: 1s;
+                -o-transition: 1s;
+            }
+            
+            &_line-middle {
+                top: 15px;
+                -webkit-transition: 1s;
+                -moz-transition: 1s;
+                -ms-transition: 1s;
+                -o-transition: 1s;
+            }
+            
+            &_line-bottom {
+                top: 25px;
+                -webkit-transition: 1s;
+                -moz-transition: 1s;
+                -ms-transition: 1s;
+                -o-transition: 1s;
+            }
+        }
+    }
+}
+
+.hide-nav.active .hide-nav_line-top {
+    top: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.hide-nav.active .hide-nav_line-middle {
+    opacity: 0;
+}
+
+.hide-nav.active .hide-nav_line-bottom {
+    top: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+
+.logo {
+    float: left;
+    &__text {
+        font-family: Roboto, sans-serif;
+        color:  @light_color;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+
+    &_text_green {
+        font-family: Pacifico;
+        color:  @text_green;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 36px;
+    }   
+}
+
+.nav {
+    float: right;
+    & .nav-list {
+        display: flex;
+        & .nav-list__item {
+            margin-right: 40px;
+            
+            & a {
+                display: block;
+                font-family: Roboto, sans-serif;
+                color:  @light_color;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 36px;
+                text-decoration: none;
+            }
+            
+            & a:hover {
+                color:  @text_green;
+                border-bottom: 1px solid @text_green;
+                -webkit-transition: 0.5s ease;
+                -moz-transition: 0.5s ease;
+                -ms-transition: 0.5s ease;
+                -o-transition: 0.5s ease;
+            }
+        }
+        
+        & .nav-list__item:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.header-preview {
+    text-align: center;
+    & .header-preview__heading {
+        font-family: Exo, sans-serif;
+        color:  @light_color;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: center;
+        text-transform: capitalize;
+        
+        & .header-preview__heading_text_green {
+            color: @text_green;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+    }
+    
+    & .header-preview__description {
+        width: 900px;
+        font-family: Roboto, sans-serif;
+        color:  #ffffff;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 36px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    & ._outer_margin {
+        margin-bottom: 42px;
+    }
+}

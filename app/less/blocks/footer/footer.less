@@ -1,0 +1,136 @@
+.footer {
+    font-family: Roboto, sans-serif;
+    background-color: #000;
+}
+
+.footer-boxes {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 39px;
+}
+
+.about {
+    flex-basis: 310px;
+}
+
+.heading-footer {
+    color:  #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.text_color {
+    color:  #c7c7c7;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+.set-lists {
+    display: flex;
+}
+
+.quick-links-list {
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    &_margin {
+        margin-right: 30px;
+    }
+}
+
+.quick-links-list li a {
+    text-decoration: none;
+}
+
+.quick-links-list li a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.subscribe {
+    margin-top: 6px;
+}
+
+.icons-social-networks {
+    display: flex;
+    
+    & .icon {
+        border: 2px solid #8f8e91;
+        width: 36px;
+        height: 36px;
+        color: #8f8e91;
+        text-align: center;
+        line-height: 36px;
+        
+        & a {
+            display: block;
+            color: #8f8e91;
+        }
+        
+        &_margin {
+            margin-right: 8px;
+        }
+        
+        &:hover {
+            border-color: #fff;
+            & a {
+                color: #fff;
+            }
+        }
+    }
+    
+}
+
+.email-for-subscribe {
+    border: 1px solid #838484;
+    width: 248px;
+    height: 40px;
+    background-color: transparent;
+    color: #838484;
+    padding: 16px 9px;
+    
+    &_margin {
+        margin-bottom: 17px;
+        margin-top: 5px;
+    }
+
+    &:focus {
+        outline: none;
+        border: 0.5px solid #1dde85;
+    }
+}
+
+.button-for-subscribe {
+    border: none;
+    background-color: @text_green;
+    width: 105px;
+    height: 37px;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 36px;
+    text-align: center;
+}
+
+.button-for-subscribe:hover {
+    background-color: #1bea82;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+.copyright {
+    text-align: center;
+    color: #8f8e91;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-top: 71px;
+    margin-bottom: 29px;
+}
+
